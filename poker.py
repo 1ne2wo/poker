@@ -1,10 +1,11 @@
-#输入样例：
+#输入样例：（点数间，花色间用空格隔开）
+#请分别输入white或black，点数，花色。
 #white or black:white
 #点数：
-#花色；
+#花色：
 #white or black:black
-#点数；
-#花色；
+#点数：
+#花色：
 def poker(numbers,colors):
     new_numbers=[]
     numbers=numbers.split()
