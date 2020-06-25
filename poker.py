@@ -49,8 +49,10 @@ def poker(numbers,colors):
         point+=2
     elif p == 2:
         point+=3
-    if point == 1 or point == 5 or point == 10:
+    if point == 10 or point == 5:
         point+=0.01*numbers[0]
+    if point == 6 or point == 1:
+        point=point+0.01*numbers[0]+0.01*numbers[1]+0.01*numbers[2]+0.01*numbers[3]+0.01*numbers[4]
 
     return point
     
@@ -75,6 +77,6 @@ if win == 1:
 elif win == 2:
     print(side2+' wins.')
 elif win == 0:
-    print('draw.')
+    print('Tie.')
 
 
